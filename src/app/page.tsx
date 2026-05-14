@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import {
   ArrowRight,
   BarChart2,
@@ -221,6 +222,7 @@ export default function Home() {
               Acess global markets with real-time data and advanced training
               tool
             </motion.p>
+            <Link href="/signup">
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -231,6 +233,7 @@ export default function Home() {
             >
               Open Free Account <ArrowRight className="ml-2" />
             </motion.button>
+            </Link>
           </div>
         </Animatedsection>
 
